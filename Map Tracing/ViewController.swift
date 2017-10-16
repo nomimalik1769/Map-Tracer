@@ -8,8 +8,9 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var maptreace: MKMapView!
     
@@ -19,6 +20,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
 //Providence RI lat = 41/8240 long=71.4128
 //hartford CT lat = 41.7637 long = 72.6851
     
+    var LocationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,8 +35,38 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let region:MKCoordinateRegion = MKCoordinateRegion(center: location,span: span)
         
         maptreace.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = "Augusta, ME"
+        annotation.subtitle = "State Of America"
+        annotation.coordinate = location
+        maptreace.addAnnotation(annotation)
+        
+        LocationManager.delegate = self
+        LocationManager.desiredAccuracy = kCLLocationAccuracyBest
+        LocationManager.requestWhenInUseAuthorization()
+        LocationManager.startUpdatingLocation()
     }
-
+    
+  /*  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let userlocation: CLLocation = locations[0]
+       
+        let latitude = userlocation.coordinate.latitude
+        let longitude = userlocation.coordinate.latitude
+        let latdelta: CLLocationDegrees = 0.05
+        let longdelta: CLLocationDegrees = 0.05
+   
+        let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latdelta,longitudeDelta: longdelta)
+        let location: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude,longitude: longitude)
+        
+        let region:MKCoordinateRegion = MKCoordinateRegion(center: location,span: span)
+        
+        self.maptreace.setRegion(region, animated: true)
+        
+    
+    }
+*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

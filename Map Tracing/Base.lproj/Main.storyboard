@@ -19,13 +19,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-fs-lz8">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="664"/>
+                                <rect key="frame" x="0.0" y="68" width="1112" height="596"/>
                             </mapView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dh1-Ao-o7d">
+                                <rect key="frame" x="0.0" y="1" width="1112" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6s-1W-fx6">
+                                        <rect key="frame" x="29" y="27" width="296" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Augusta, ME">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="28" name="Georgia-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-Lf-lJd">
+                                        <rect key="frame" x="408" y="8" width="296" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="52" name="Georgia-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8h-Gg-2Nq">
+                                        <rect key="frame" x="770" y="24" width="334" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Distance  : 23.2 km/h">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="28" name="Georgia-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1112" id="rjG-sW-FqM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vTw-fs-lz8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8hS-En-KJU"/>
+                            <constraint firstItem="vTw-fs-lz8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="9fw-Sr-q21"/>
+                            <constraint firstItem="Dh1-Ao-o7d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NAN-WL-Vs6"/>
                             <constraint firstAttribute="trailing" secondItem="vTw-fs-lz8" secondAttribute="trailing" id="NRO-V8-q4y"/>
+                            <constraint firstItem="Dh1-Ao-o7d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gdb-CI-VM9"/>
+                            <constraint firstItem="Dh1-Ao-o7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i7t-tb-NUs"/>
                             <constraint firstItem="vTw-fs-lz8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sfG-mg-X7V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vTw-fs-lz8" secondAttribute="bottom" constant="170" id="yqN-lU-ubG"/>
                         </constraints>

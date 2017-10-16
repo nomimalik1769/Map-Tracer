@@ -76,8 +76,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return statenames.count
     }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return statenames[row]
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let myTitle = NSAttributedString(string: statenames[row], attributes: [NSAttributedStringKey.font:UIFont(name: "Georgia", size: 15.0)!,NSAttributedStringKey.foregroundColor:UIColor.green])
+        return myTitle
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

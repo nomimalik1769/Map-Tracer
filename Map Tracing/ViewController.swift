@@ -22,7 +22,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let latitude: CLLocationDegrees = 44.33106
+        let longitude: CLLocationDegrees = -69.7795
+        let latdelta: CLLocationDegrees = 0.05
+        let longdelta: CLLocationDegrees = 0.05
         
+        let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latdelta,longitudeDelta: longdelta)
+        let location: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude,longitude: longitude)
+        
+        let region:MKCoordinateRegion = MKCoordinateRegion(center: location,span: span)
+        
+        maptreace.setRegion(region, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

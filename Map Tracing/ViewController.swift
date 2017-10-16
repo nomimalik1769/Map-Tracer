@@ -10,11 +10,13 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    var statenames = ["Augusta ME","Concord NH","Boston MA","Providence RI","HartFord CT"]
     @IBOutlet weak var maptreace: MKMapView!
     
-//augusta ME lat= 44.33106 long = 69.7795
+    @IBOutlet weak var statepicker: UIPickerView!
+    //augusta ME lat= 44.33106 long = 69.7795
 //concord NH lat= 43.2081 long = 71.5376
 //bostan MA lat = 42.3601 long = 71.0589
 //Providence RI lat = 41/8240 long=71.4128
@@ -67,6 +69,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     }
 */
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return statenames.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return statenames[row]
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

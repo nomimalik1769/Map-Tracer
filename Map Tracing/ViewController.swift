@@ -12,6 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var MapShow: UIView!
     var statenames = ["Augusta ME","Concord NH","Boston MA","Providence RI","HartFord CT"]
     @IBOutlet weak var maptreace: MKMapView!
     
@@ -50,25 +51,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         LocationManager.startUpdatingLocation()
     }
     
-  /*  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        let userlocation: CLLocation = locations[0]
-       
-        let latitude = userlocation.coordinate.latitude
-        let longitude = userlocation.coordinate.latitude
-        let latdelta: CLLocationDegrees = 0.05
-        let longdelta: CLLocationDegrees = 0.05
-   
-        let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latdelta,longitudeDelta: longdelta)
-        let location: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude,longitude: longitude)
-        
-        let region:MKCoordinateRegion = MKCoordinateRegion(center: location,span: span)
-        
-        self.maptreace.setRegion(region, animated: true)
-        
-    
-    }
-*/
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

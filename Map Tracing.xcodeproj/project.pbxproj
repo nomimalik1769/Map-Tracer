@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		774D462A37A30F9E09126B99 /* Pods_Map_Tracing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A54BA3E6E393105B02979A9 /* Pods_Map_Tracing.framework */; };
 		8492B1811F9498AB007B6F13 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8492B1801F9498AA007B6F13 /* CoreLocation.framework */; };
+		84F63DA11F9718FF00E0792F /* Sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6C1F95F00100F5E827 /* Sound1.mp3 */; };
+		84F63DA21F9718FF00E0792F /* Sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6E1F95F02800F5E827 /* Sound2.mp3 */; };
+		84F63DA31F9718FF00E0792F /* Sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6F1F95F02F00F5E827 /* Sound3.mp3 */; };
+		84F63DA41F9718FF00E0792F /* Sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B701F95F03600F5E827 /* Sound4.mp3 */; };
+		84F63DA51F9718FF00E0792F /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B711F95F06F00F5E827 /* Music2.mp3 */; };
+		84F63DA61F9718FF00E0792F /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B721F95F07800F5E827 /* Music3.mp3 */; };
+		84F63DA71F9718FF00E0792F /* Music4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B731F95F09B00F5E827 /* Music4.mp3 */; };
+		84F63DA81F9718FF00E0792F /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6D1F95F00800F5E827 /* Music1.mp3 */; };
 		84FE4B6B1F95DE3800F5E827 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4B6A1F95DE3800F5E827 /* MusicController.swift */; };
 		84FE4B791F960BE100F5E827 /* MusicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4B781F960BE100F5E827 /* MusicViewCell.swift */; };
-		84FE4B7A1F96167300F5E827 /* Sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6C1F95F00100F5E827 /* Sound1.mp3 */; };
-		84FE4B7B1F96167300F5E827 /* Sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6E1F95F02800F5E827 /* Sound2.mp3 */; };
-		84FE4B7C1F96167300F5E827 /* Sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6F1F95F02F00F5E827 /* Sound3.mp3 */; };
-		84FE4B7D1F96167300F5E827 /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B711F95F06F00F5E827 /* Music2.mp3 */; };
-		84FE4B7E1F96167300F5E827 /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B721F95F07800F5E827 /* Music3.mp3 */; };
-		84FE4B7F1F96167300F5E827 /* Music4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B731F95F09B00F5E827 /* Music4.mp3 */; };
-		84FE4B801F96167300F5E827 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B6D1F95F00800F5E827 /* Music1.mp3 */; };
-		84FE4B811F9616B700F5E827 /* Sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE4B701F95F03600F5E827 /* Sound4.mp3 */; };
 		B0B313791F947FB800226776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B313781F947FB800226776 /* AppDelegate.swift */; };
 		B0B3137B1F947FB800226776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3137A1F947FB800226776 /* ViewController.swift */; };
 		B0B3137E1F947FB800226776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B3137C1F947FB800226776 /* Main.storyboard */; };
@@ -184,14 +184,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FE4B811F9616B700F5E827 /* Sound4.mp3 in Resources */,
-				84FE4B7A1F96167300F5E827 /* Sound1.mp3 in Resources */,
-				84FE4B7B1F96167300F5E827 /* Sound2.mp3 in Resources */,
-				84FE4B7C1F96167300F5E827 /* Sound3.mp3 in Resources */,
-				84FE4B7D1F96167300F5E827 /* Music2.mp3 in Resources */,
-				84FE4B7E1F96167300F5E827 /* Music3.mp3 in Resources */,
-				84FE4B7F1F96167300F5E827 /* Music4.mp3 in Resources */,
-				84FE4B801F96167300F5E827 /* Music1.mp3 in Resources */,
+				84F63DA11F9718FF00E0792F /* Sound1.mp3 in Resources */,
+				84F63DA21F9718FF00E0792F /* Sound2.mp3 in Resources */,
+				84F63DA31F9718FF00E0792F /* Sound3.mp3 in Resources */,
+				84F63DA41F9718FF00E0792F /* Sound4.mp3 in Resources */,
+				84F63DA51F9718FF00E0792F /* Music2.mp3 in Resources */,
+				84F63DA61F9718FF00E0792F /* Music3.mp3 in Resources */,
+				84F63DA71F9718FF00E0792F /* Music4.mp3 in Resources */,
+				84F63DA81F9718FF00E0792F /* Music1.mp3 in Resources */,
 				B0B313831F947FB800226776 /* LaunchScreen.storyboard in Resources */,
 				B0B313801F947FB800226776 /* Assets.xcassets in Resources */,
 				B0B3137E1F947FB800226776 /* Main.storyboard in Resources */,
